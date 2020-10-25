@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTBS_SLS_IN>
+	<Login></Login>
+	<Channel>${Channel}</Channel>
+	<System>${System}</System>
+<SIMCard>
+	<IMSI>${IMSI}</IMSI>
+</SIMCard>
+</RTBS_SLS_IN>

@@ -1,0 +1,80 @@
+[2015Jun08 17:32:20,145][INFO ][1433800940145][doPost ConsultaLineaServlet.java:55][XML Recibido: null]
+[2015Jun08 17:32:20,164][DEBUG][1433800940145][getInstance FCController.java:147][ new Instance of ConsultaDeLinea with two Ccws Connections. ]
+[2015Jun08 17:32:20,166][DEBUG][1433800940145][processRequest FCController.java:165][]
+[2015Jun08 17:32:20,167][DEBUG][1433800940145][processRequest FCController.java:175][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2015Jun08 17:32:20,169][DEBUG][1433800940145][buildRequest FCHelper.java:121][INICIO de parser XML de entrada]
+[2015Jun08 17:32:20,616][ERROR][1433800940145][processRequest FCController.java:199][Codigo de Error: -50 Mensaje de Error: Error Generico]
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:33)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:124)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:181)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2015Jun08 17:32:20,621][DEBUG][1433800940145][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Jun08 17:32:20,622][INFO ][1433800940145][doPost ConsultaLineaServlet.java:60][Requerimiento Procesado]
+[2015Jun08 17:32:21,234][INFO ][1433800941233][doPost ConsultaLineaServlet.java:55][XML Recibido: null]
+[2015Jun08 17:32:21,235][DEBUG][1433800941233][getInstance FCController.java:147][ new Instance of ConsultaDeLinea with two Ccws Connections. ]
+[2015Jun08 17:32:21,237][DEBUG][1433800941233][processRequest FCController.java:165][]
+[2015Jun08 17:32:21,238][DEBUG][1433800941233][processRequest FCController.java:175][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2015Jun08 17:32:21,240][DEBUG][1433800941233][buildRequest FCHelper.java:121][INICIO de parser XML de entrada]
+[2015Jun08 17:32:21,242][ERROR][1433800941233][processRequest FCController.java:199][Codigo de Error: -50 Mensaje de Error: Error Generico]
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:33)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:124)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:181)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doGet(ConsultaLineaServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2015Jun08 17:32:21,245][DEBUG][1433800941233][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Jun08 17:32:21,247][INFO ][1433800941233][doPost ConsultaLineaServlet.java:60][Requerimiento Procesado]
+[2015Jun08 17:34:08,378][INFO ][1433801048378][doPost ConsultaLineaServlet.java:55][XML Recibido: null]
+[2015Jun08 17:34:08,380][DEBUG][1433801048378][getInstance FCController.java:147][ new Instance of ConsultaDeLinea with two Ccws Connections. ]
+[2015Jun08 17:34:08,381][DEBUG][1433801048378][processRequest FCController.java:165][]
+[2015Jun08 17:34:08,382][DEBUG][1433801048378][processRequest FCController.java:175][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2015Jun08 17:34:08,384][DEBUG][1433801048378][buildRequest FCHelper.java:121][INICIO de parser XML de entrada]
+[2015Jun08 17:34:08,386][ERROR][1433801048378][processRequest FCController.java:199][Codigo de Error: -50 Mensaje de Error: Error Generico]
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:33)
+	at ve.com.digitel.consulta.linea.fc.XmlToRequest.run(XmlToRequest.java:58)
+	at ve.com.digitel.consulta.linea.fc.FCHelper.buildRequest(FCHelper.java:124)
+	at ve.com.digitel.consulta.linea.fc.FCController.processRequest(FCController.java:181)
+	at ve.com.digitel.consulta.linea.servlet.ConsultaLineaServlet.doPost(ConsultaLineaServlet.java:57)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1072)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:6981)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3892)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2766)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+[2015Jun08 17:34:08,389][DEBUG][1433801048378][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Jun08 17:34:08,390][INFO ][1433801048378][doPost ConsultaLineaServlet.java:60][Requerimiento Procesado]

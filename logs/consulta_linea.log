@@ -1,0 +1,651 @@
+[2013Sep18 19:14:30,293][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultaLineaCompleta - VERSION: 1.0]
+[2013Sep18 19:14:30,321][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de linea]
+[2013Sep18 19:14:30,324][INFO ][1379546070324][doPost ConsultaLineaServlet.java:55][XML Recibido: <EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 19:14:30,340][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="${ERROR_CODE}" /> 
+		<PARAM name="ERROR_DESCRIPTION" value="${ERROR_DESCRIPTION}" /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:14:30,341][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8" ?> 
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="]
+[2013Sep18 19:14:30,349][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ERROR_CODE]
+[2013Sep18 19:14:30,354][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " /> 
+		<PARAM name="ERROR_DESCRIPTION" value="]
+[2013Sep18 19:14:30,355][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ERROR_DESCRIPTION]
+[2013Sep18 19:14:30,356][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " /> 
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:14:30,365][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="${ICCID}" />
+		<PARAM name="MSISDN" value="${SubscriberID}" />
+		<PARAM name="IMSI" value="${IMSI}" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="${PUK}" />
+		<PARAM name="PIN2" value="${PIN}" />
+		<PARAM name="PUK2" value="${PUK2}" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="${currentState}" />
+		<PARAM name="MONEY_SITUATION" value="${MONEY_SITUATION}" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="${SERVICEPROVIDERID}" />
+		<PARAM name="INSTALL_DATE" value="${INSTALL_DATE}" />
+		<PARAM name="ACTIVE_DATE" value="${ACTIVE_DATE}" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="${DEACTIVATED}" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="${LANGUAGE_ID}" />
+		<PARAM name="TARIFFID" value="${PRODUCT_DESC_CERO}" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="${LAST_CALL_DATE}" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="${NUM_FREE_SMS}" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="${BONUS1}" />
+		<PARAM name="BONUS2" value="${BONUS2}" />
+		<PARAM name="NUM_FREE_SECONDS" value="${NUM_FREE_SECONDS}" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="${RET_BONUS}" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="${RET_BONUS_EDATE}" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="${PRODUCT_NAME_CERO}" />
+			<PARAM name="PRODUCT_DESC" value="${PRODUCT_DESC_CERO}" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="${ACT_DATE}" />
+			<PARAM name="LAST_ACT_DATE" value="${LAST_ACT_DATE}" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="${RENEWAL_PERIOD}" />
+			<PARAM name="RENEWAL_DAY" value="${RENEWAL_DAY}" />
+		</RECORD>
+]
+[2013Sep18 19:14:30,366][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="]
+[2013Sep18 19:14:30,368][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ICCID]
+[2013Sep18 19:14:30,369][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="MSISDN" value="]
+[2013Sep18 19:14:30,371][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: SubscriberID]
+[2013Sep18 19:14:30,372][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="IMSI" value="]
+[2013Sep18 19:14:30,373][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: IMSI]
+[2013Sep18 19:14:30,375][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="]
+[2013Sep18 19:14:30,376][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PUK]
+[2013Sep18 19:14:30,378][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="PIN2" value="]
+[2013Sep18 19:14:30,379][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PIN]
+[2013Sep18 19:14:30,380][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="PUK2" value="]
+[2013Sep18 19:14:30,382][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PUK2]
+[2013Sep18 19:14:30,383][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="]
+[2013Sep18 19:14:30,385][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: currentState]
+[2013Sep18 19:14:30,386][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="MONEY_SITUATION" value="]
+[2013Sep18 19:14:30,387][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: MONEY_SITUATION]
+[2013Sep18 19:14:30,389][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="]
+[2013Sep18 19:14:30,390][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: SERVICEPROVIDERID]
+[2013Sep18 19:14:30,392][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="INSTALL_DATE" value="]
+[2013Sep18 19:14:30,393][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: INSTALL_DATE]
+[2013Sep18 19:14:30,394][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="ACTIVE_DATE" value="]
+[2013Sep18 19:14:30,396][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ACTIVE_DATE]
+[2013Sep18 19:14:30,397][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="]
+[2013Sep18 19:14:30,399][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: DEACTIVATED]
+[2013Sep18 19:14:30,400][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="]
+[2013Sep18 19:14:30,401][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: LANGUAGE_ID]
+[2013Sep18 19:14:30,403][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="TARIFFID" value="]
+[2013Sep18 19:14:30,404][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT_DESC_CERO]
+[2013Sep18 19:14:30,406][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="]
+[2013Sep18 19:14:30,407][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: LAST_CALL_DATE]
+[2013Sep18 19:14:30,409][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="]
+[2013Sep18 19:14:30,410][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: NUM_FREE_SMS]
+[2013Sep18 19:14:30,411][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="]
+[2013Sep18 19:14:30,413][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: BONUS1]
+[2013Sep18 19:14:30,414][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="BONUS2" value="]
+[2013Sep18 19:14:30,416][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: BONUS2]
+[2013Sep18 19:14:30,417][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="NUM_FREE_SECONDS" value="]
+[2013Sep18 19:14:30,419][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: NUM_FREE_SECONDS]
+[2013Sep18 19:14:30,420][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="]
+[2013Sep18 19:14:30,421][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: RET_BONUS]
+[2013Sep18 19:14:30,423][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="]
+[2013Sep18 19:14:30,424][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: RET_BONUS_EDATE]
+[2013Sep18 19:14:30,426][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="]
+[2013Sep18 19:14:30,427][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT_NAME_CERO]
+[2013Sep18 19:14:30,428][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="PRODUCT_DESC" value="]
+[2013Sep18 19:14:30,430][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT_DESC_CERO]
+[2013Sep18 19:14:30,431][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="]
+[2013Sep18 19:14:30,433][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ACT_DATE]
+[2013Sep18 19:14:30,434][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="LAST_ACT_DATE" value="]
+[2013Sep18 19:14:30,436][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: LAST_ACT_DATE]
+[2013Sep18 19:14:30,437][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="]
+[2013Sep18 19:14:30,438][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: RENEWAL_PERIOD]
+[2013Sep18 19:14:30,440][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="RENEWAL_DAY" value="]
+[2013Sep18 19:14:30,441][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: RENEWAL_DAY]
+[2013Sep18 19:14:30,445][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		</RECORD>
+]
+[2013Sep18 19:14:30,447][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: 		<RECORD name="PRODUCT" value="${PRODUCT}">
+			<PARAM name="PRODUCT_NAME" value="${PRODUCT_NAME}" />
+			<PARAM name="PRODUCT_DESC" value="${PRODUCT_DESC}" />
+			<PARAM name="PRODUCT_STATUS" value="${PRODUCT_STATUS}" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="${ACT_DATE}" />
+			<PARAM name="LAST_ACT_DATE" value="${LAST_ACT_DATE}" />
+			<PARAM name="EXP_DATE" value="${EXP_DATE}" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="${RENEWAL_PERIOD}" />
+			<PARAM name="RENEWAL_DAY" value="${RENEWAL_DAY}" />
+		</RECORD>
+]
+[2013Sep18 19:14:30,449][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: 		<RECORD name="PRODUCT" value="]
+[2013Sep18 19:14:30,450][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT]
+[2013Sep18 19:14:30,452][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: ">
+			<PARAM name="PRODUCT_NAME" value="]
+[2013Sep18 19:14:30,453][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT_NAME]
+[2013Sep18 19:14:30,454][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="PRODUCT_DESC" value="]
+[2013Sep18 19:14:30,456][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT_DESC]
+[2013Sep18 19:14:30,457][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="PRODUCT_STATUS" value="]
+[2013Sep18 19:14:30,458][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: PRODUCT_STATUS]
+[2013Sep18 19:14:30,460][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="]
+[2013Sep18 19:14:30,461][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: ACT_DATE]
+[2013Sep18 19:14:30,463][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="LAST_ACT_DATE" value="]
+[2013Sep18 19:14:30,464][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: LAST_ACT_DATE]
+[2013Sep18 19:14:30,465][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="EXP_DATE" value="]
+[2013Sep18 19:14:30,467][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: EXP_DATE]
+[2013Sep18 19:14:30,468][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="]
+[2013Sep18 19:14:30,470][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: RENEWAL_PERIOD]
+[2013Sep18 19:14:30,471][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+			<PARAM name="RENEWAL_DAY" value="]
+[2013Sep18 19:14:30,472][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: RENEWAL_DAY]
+[2013Sep18 19:14:30,474][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		</RECORD>
+]
+[2013Sep18 19:14:30,477][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: 	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:14:30,478][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: 	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:14:30,480][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8" ?>
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="MSISDN" value="${SubscriberID}" />
+		<PARAM name="IMSI" value="${IMSI}" />
+		<PARAM name="STATE" value="${currentState}" />
+		<PARAM name="MONEY_SITUATION" value="${MONEY_SITUATION}" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:14:30,482][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8" ?>
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="MSISDN" value="]
+[2013Sep18 19:14:30,483][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: SubscriberID]
+[2013Sep18 19:14:30,484][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="IMSI" value="]
+[2013Sep18 19:14:30,486][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: IMSI]
+[2013Sep18 19:14:30,487][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="STATE" value="]
+[2013Sep18 19:14:30,489][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: currentState]
+[2013Sep18 19:14:30,490][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="MONEY_SITUATION" value="]
+[2013Sep18 19:14:30,491][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: MONEY_SITUATION]
+[2013Sep18 19:14:30,493][DEBUG][1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: " />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:14:30,500][DEBUG][1379546070324][getInstance FCController.java:147][ new Instance of ConsultaDeLinea with two Ccws Connections. ]
+[2013Sep18 19:14:30,501][DEBUG][1379546070324][processRequest FCController.java:165][<EAIMessage MessageId="9876" IntObjectName="PTSVQRYSERPRE"><IBX_ADP_IN_PARAMETERS><PARAM name="SUBSYS" value="FEATC"/><PARAM name="MSISDN" value="584129117195"/></IBX_ADP_IN_PARAMETERS></EAIMessage>]
+[2013Sep18 19:14:30,502][DEBUG][1379546070324][processRequest FCController.java:175][PASO 1: Parser de XML de entrada y validacion de entrada]
+[2013Sep18 19:14:30,511][DEBUG][1379546070324][buildRequest FCHelper.java:121][INICIO de parser XML de entrada]
+[2013Sep18 19:14:30,987][DEBUG][584129117195_1379546070324][processRequest FCController.java:253][PASO 2: Consulta de datos linea RTBS]
+[2013Sep18 19:14:31,004][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>${username}</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>${date}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>${suscriberID}</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2013Sep18 19:14:31,006][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>]
+[2013Sep18 19:14:31,008][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: username]
+[2013Sep18 19:14:31,009][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2013Sep18 19:14:31,011][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2013Sep18 19:14:31,012][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>]
+[2013Sep18 19:14:31,014][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2013Sep18 19:14:31,015][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>]
+[2013Sep18 19:14:31,017][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: suscriberID]
+[2013Sep18 19:14:31,020][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2013Sep18 19:14:31,181][DEBUG][584129117195_1379546070324][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2013Sep18 19:14:31,184][DEBUG][584129117195_1379546070324][buildSOAPBody RTBSRetrieveDelegator.java:182][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2013-09-18T19:14:31.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584129117195</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>13</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2013Sep18 19:14:31,312][DEBUG][584129117195_1379546070324][execute RTBSRetrieveDelegator.java:129][str: org.apache.commons.httpclient.methods.StringRequestEntity@dc2bd6]
+[2013Sep18 19:14:31,478][DEBUG][584129117195_1379546070324][execute RTBSRetrieveDelegator.java:154][Respuesta Obtenida RTBS: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><soap:Header><VersionInfoHeader xmlns="http://comverse-in.com/prepaid/ccws"><ProductVersion /><CustomerVersion /></VersionInfoHeader><wsa:Action>http://comverse-in.com/prepaid/ccws/RetrieveSubscriberWithIdentityNoHistoryResponse</wsa:Action><wsa:MessageID>urn:uuid:cf44cd88-d633-4e6a-9d2c-cb95df9cdf28</wsa:MessageID><wsa:RelatesTo>urn:uuid:9fd159e6-6ee1-49ce-a695-f0bfd482fce8</wsa:RelatesTo><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsse:Security><wsu:Timestamp wsu:Id="Timestamp-dbaedbbd-aa64-44e9-ae97-3fc734abc9a3"><wsu:Created>2013-09-18T23:16:43Z</wsu:Created></wsu:Timestamp></wsse:Security></soap:Header><soap:Body><RetrieveSubscriberWithIdentityNoHistoryResponse xmlns="http://comverse-in.com/prepaid/ccws"><RetrieveSubscriberWithIdentityNoHistoryResult><SubscriberID>584129117195</SubscriberID><SubscriberInfo><FirstName>Testing</FirstName><LastName>Testing</LastName><Address1>00000</Address1><Address2>00000</Address2><Address3>00000</Address3><Address4>00000</Address4><ZIP>00000</ZIP></SubscriberInfo><SubscriberPhoneBook /><SubscriberData><NotificationLanguage>Spanish</NotificationLanguage><RoamingCreditLimitAsString>0</RoamingCreditLimitAsString><CurrentState>Active</CurrentState><COSName>Radicall Plus ZF</COSName><PIN>0000</PIN><PINChangeNeeded>false</PINChangeNeeded><LanguageName>Spanish</LanguageName><IMSI>734021019549237</IMSI><NumberFreeAnCallsString>0</NumberFreeAnCallsString><BillCycleDay>29</BillCycleDay><NotificationLevel>0</NotificationLevel><MarketSegment>ANY</MarketSegment><LimitType>NONE</LimitType><BonusPlan><BonusPlanName>BP_BOCHEMO12_REC_NON_EVE01</BonusPlanName></BonusPlan><BonusPlan><BonusPlanName>BP_SILENTES12_NON_CUR01</BonusPlanName></BonusPlan><Balances><Balance><Balance>5917.702156</Balance><AccountExpiration>2041-07-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>Core</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>5917.702156</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>1898</Balance><AccountExpiration>2013-11-20T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1898</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>35</Balance><AccountExpiration>2013-09-30T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>35</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>260</Balance><AccountExpiration>2013-09-30T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>260</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>205500</Balance><AccountExpiration>2013-09-30T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>205500</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>37660</Balance><AccountExpiration>2013-09-30T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>37660</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>2239487.9</Balance><AccountExpiration>2013-10-06T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>2239487.9</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>1480</Balance><AccountExpiration>2013-09-23T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_BS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1480</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>1000</Balance><AccountExpiration>2013-10-02T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1000</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>500</Balance><AccountExpiration>2013-10-02T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>500</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>3190</Balance><AccountExpiration>2013-10-17T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>3190</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2013-09-22T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2013-09-22T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>555</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_LDI</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>555</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2013-09-22T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance></Balances><SPName>DIGITEL</SPName><CreationDate>2013-07-29T11:59:03.0000000-04:30</CreationDate><DateEnterActive>2013-08-05T18:17:59.0000000-04:30</DateEnterActive><PreviousState>Stolen(S2)</PreviousState><PrevTransDate>2013-09-17T16:35:40.0000000-04:30</PrevTransDate><LastTransDate>2013-09-18T18:23:45.0000000-04:30</LastTransDate><AccountType>Individual</AccountType><LastCallCharge>0</LastCallCharge><FreeFFChgAllowance>0</FreeFFChgAllowance><FFChangeCount>0</FFChangeCount><CurrencyCode>VEB</CurrencyCode><PromisedPaymentAmount>0</PromisedPaymentAmount><PromisedPaymentDueDate>0001-01-01T00:00:00.0000000-04:30</PromisedPaymentDueDate><PromisedPaymentBalanceID>0</PromisedPaymentBalanceID><CosInstantiationTimeStamp>0001-01-01T00:00:00.0000000-04:30</CosInstantiationTimeStamp><Accumulator><AccumulatorName>AC_REC_ACT_EVE01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_CUR01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_EVE01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><LoyaltyEnrollmentDate>0001-01-01T00:00:00.0000000-04:30</LoyaltyEnrollmentDate><NextLoyaltySyncDate>0001-01-01T00:00:00.0000000-04:30</NextLoyaltySyncDate><LoyaltyScaleRate>0</LoyaltyScaleRate><LoyaltyBonusScale>0</LoyaltyBonusScale><CurrentHappyHourActiveDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourActiveDate><CurrentHappyHourEndDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourEndDate><PreferredNumberDate>0001-01-01T00:00:00.0000000-04:30</PreferredNumberDate></SubscriberData></RetrieveSubscriberWithIdentityNoHistoryResult></RetrieveSubscriberWithIdentityNoHistoryResponse></soap:Body></soap:Envelope>]
+[2013Sep18 19:14:31,481][DEBUG][584129117195_1379546070324][processRequest FCController.java:290][Consulta RTBS: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><soap:Header><VersionInfoHeader xmlns="http://comverse-in.com/prepaid/ccws"><ProductVersion /><CustomerVersion /></VersionInfoHeader><wsa:Action>http://comverse-in.com/prepaid/ccws/RetrieveSubscriberWithIdentityNoHistoryResponse</wsa:Action><wsa:MessageID>urn:uuid:cf44cd88-d633-4e6a-9d2c-cb95df9cdf28</wsa:MessageID><wsa:RelatesTo>urn:uuid:9fd159e6-6ee1-49ce-a695-f0bfd482fce8</wsa:RelatesTo><wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To><wsse:Security><wsu:Timestamp wsu:Id="Timestamp-dbaedbbd-aa64-44e9-ae97-3fc734abc9a3"><wsu:Created>2013-09-18T23:16:43Z</wsu:Created></wsu:Timestamp></wsse:Security></soap:Header><soap:Body><RetrieveSubscriberWithIdentityNoHistoryResponse xmlns="http://comverse-in.com/prepaid/ccws"><RetrieveSubscriberWithIdentityNoHistoryResult><SubscriberID>584129117195</SubscriberID><SubscriberInfo><FirstName>Testing</FirstName><LastName>Testing</LastName><Address1>00000</Address1><Address2>00000</Address2><Address3>00000</Address3><Address4>00000</Address4><ZIP>00000</ZIP></SubscriberInfo><SubscriberPhoneBook /><SubscriberData><NotificationLanguage>Spanish</NotificationLanguage><RoamingCreditLimitAsString>0</RoamingCreditLimitAsString><CurrentState>Active</CurrentState><COSName>Radicall Plus ZF</COSName><PIN>0000</PIN><PINChangeNeeded>false</PINChangeNeeded><LanguageName>Spanish</LanguageName><IMSI>734021019549237</IMSI><NumberFreeAnCallsString>0</NumberFreeAnCallsString><BillCycleDay>29</BillCycleDay><NotificationLevel>0</NotificationLevel><MarketSegment>ANY</MarketSegment><LimitType>NONE</LimitType><BonusPlan><BonusPlanName>BP_BOCHEMO12_REC_NON_EVE01</BonusPlanName></BonusPlan><BonusPlan><BonusPlanName>BP_SILENTES12_NON_CUR01</BonusPlanName></BonusPlan><Balances><Balance><Balance>5917.702156</Balance><AccountExpiration>2041-07-31T23:59:59.0000000-04:30</AccountExpiration><BalanceName>Core</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>5917.702156</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>1898</Balance><AccountExpiration>2013-11-20T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1898</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>35</Balance><AccountExpiration>2013-09-30T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>35</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>260</Balance><AccountExpiration>2013-09-30T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>260</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>205500</Balance><AccountExpiration>2013-09-30T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>205500</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>37660</Balance><AccountExpiration>2013-09-30T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>37660</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>2239487.9</Balance><AccountExpiration>2013-10-06T23:59:59.0000000-04:30</AccountExpiration><BalanceName>NF_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>2239487.9</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>1480</Balance><AccountExpiration>2013-09-23T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_BS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1480</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>6</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>1000</Balance><AccountExpiration>2013-10-02T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>1000</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>500</Balance><AccountExpiration>2013-10-02T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>500</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>3190</Balance><AccountExpiration>2013-10-17T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>3190</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>F_SMS_PREMIUM</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2013-09-22T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_MMS</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2013-09-22T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_KB</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>555</Balance><AccountExpiration>0001-01-01T00:00:00.0000000-04:30</AccountExpiration><BalanceName>NF_SEC_LDI</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>555</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance><Balance><Balance>0</Balance><AccountExpiration>2013-09-22T23:59:59.0000000-04:30</AccountExpiration><BalanceName>F_SEC_M2MF_ON-OFF-NET</BalanceName><NextMaximumSpendingLimit>0</NextMaximumSpendingLimit><TotalSpendingLimit>0</TotalSpendingLimit><AvailableBalance>0</AvailableBalance><FundsType>BalanceOnly</FundsType><MaximumSpendingLimit>0</MaximumSpendingLimit><AvailableSpendingLimit>0</AvailableSpendingLimit><PrecisionPoint>1</PrecisionPoint><ExclusiveBalance>false</ExclusiveBalance></Balance></Balances><SPName>DIGITEL</SPName><CreationDate>2013-07-29T11:59:03.0000000-04:30</CreationDate><DateEnterActive>2013-08-05T18:17:59.0000000-04:30</DateEnterActive><PreviousState>Stolen(S2)</PreviousState><PrevTransDate>2013-09-17T16:35:40.0000000-04:30</PrevTransDate><LastTransDate>2013-09-18T18:23:45.0000000-04:30</LastTransDate><AccountType>Individual</AccountType><LastCallCharge>0</LastCallCharge><FreeFFChgAllowance>0</FreeFFChgAllowance><FFChangeCount>0</FFChangeCount><CurrencyCode>VEB</CurrencyCode><PromisedPaymentAmount>0</PromisedPaymentAmount><PromisedPaymentDueDate>0001-01-01T00:00:00.0000000-04:30</PromisedPaymentDueDate><PromisedPaymentBalanceID>0</PromisedPaymentBalanceID><CosInstantiationTimeStamp>0001-01-01T00:00:00.0000000-04:30</CosInstantiationTimeStamp><Accumulator><AccumulatorName>AC_REC_ACT_EVE01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_CUR01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><Accumulator><AccumulatorName>AC_REC_NON_EVE01</AccumulatorName><Amount>0</Amount><ZeroDay>0</ZeroDay><Period>0</Period><NextResetAccumulatorTS>0001-01-01T00:00:00.0000000-04:30</NextResetAccumulatorTS></Accumulator><LoyaltyEnrollmentDate>0001-01-01T00:00:00.0000000-04:30</LoyaltyEnrollmentDate><NextLoyaltySyncDate>0001-01-01T00:00:00.0000000-04:30</NextLoyaltySyncDate><LoyaltyScaleRate>0</LoyaltyScaleRate><LoyaltyBonusScale>0</LoyaltyBonusScale><CurrentHappyHourActiveDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourActiveDate><CurrentHappyHourEndDate>0001-01-01T00:00:00.0000000-04:30</CurrentHappyHourEndDate><PreferredNumberDate>0001-01-01T00:00:00.0000000-04:30</PreferredNumberDate></SubscriberData></RetrieveSubscriberWithIdentityNoHistoryResult></RetrieveSubscriberWithIdentityNoHistoryResponse></soap:Body></soap:Envelope>]
+[2013Sep18 19:14:31,484][DEBUG][584129117195_1379546070324][processRequest FCController.java:293][PASO 3: Obtener IMSI, COS y Zone]
+[2013Sep18 19:14:31,485][DEBUG][584129117195_1379546070324][buildRequestRTBS FCHelper.java:138][INICIO de parser XML obtenido de RTBS]
+[2013Sep18 19:14:31,523][DEBUG][584129117195_1379546070324][debug DispatcherConnection.java:65][ _M getCcwsConnectionOther]
+[2013Sep18 19:14:34,164][DEBUG][584129117195_1379546070324][debug DispatcherConnection.java:65][ _M getCcwsConnectionCache]
+[2013Sep18 19:14:34,176][DEBUG][584129117195_1379546070324][processRequest FCController.java:376][Se obtiene conexion a CCWS]
+[2013Sep18 19:14:40,156][INFO ][584129117195_1379546070324][processRequest FCController.java:418][Se obtiene respuesta del servicio CCWS:retrieveSubscriberWithIdentityWithHistoryForMultipleIdentities]
+[2013Sep18 19:14:40,157][DEBUG][584129117195_1379546070324][processRequest FCController.java:422][Cargos Periodicos: 0]
+[2013Sep18 19:14:40,159][DEBUG][584129117195_1379546070324][processRequest FCController.java:428][MTRs en linea: 11]
+[2013Sep18 19:14:40,161][INFO ][584129117195_1379546070324][processRequest FCController.java:456][Obteniendo clientCache]
+[2013Sep18 19:14:40,185][DEBUG][584129117195_1379546070324][processRequest FCController.java:462][Object objref = initial.lookup(jndi_name);]
+[2013Sep18 19:14:40,187][DEBUG][584129117195_1379546070324][processRequest FCController.java:469][CacheManagerRemoteHome home = (CacheManagerRemoteHome) PortableRemoteObject.narrow(objref, CacheManagerRemoteHome.class);]
+[2013Sep18 19:14:40,205][DEBUG][584129117195_1379546070324][processRequest FCController.java:475][CacheManagerRemote cacheManager = home.create();]
+[2013Sep18 19:14:41,614][DEBUG][584129117195_1379546070324][processRequest FCController.java:485][clientCache = (ClientCache) cacheManager.getObjectByKey("clientCache");]
+[2013Sep18 19:14:41,615][INFO ][584129117195_1379546070324][processRequest FCController.java:492][clientCache Obtenido]
+[2013Sep18 19:14:41,616][DEBUG][584129117195_1379546070324][processRequest FCController.java:536][PASO 4 y 5: Consulta RTBS, GetCacheEX. FriendsFamily]
+[2013Sep18 19:14:41,625][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-17659794" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>${username}</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+            <wsse:Nonce>y5CVzChQvZX/mtdnWU9a1g==</wsse:Nonce>
+            <wsu:Created>${date}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:GetCacheEx>
+         <ccws:cacheRequest>128</ccws:cacheRequest>
+      </ccws:GetCacheEx>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2013Sep18 19:14:41,627][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-17659794" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>]
+[2013Sep18 19:14:41,629][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: username]
+[2013Sep18 19:14:41,630][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2013Sep18 19:14:41,632][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2013Sep18 19:14:41,633][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+            <wsse:Nonce>y5CVzChQvZX/mtdnWU9a1g==</wsse:Nonce>
+            <wsu:Created>]
+[2013Sep18 19:14:41,635][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2013Sep18 19:14:41,637][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:GetCacheEx>
+         <ccws:cacheRequest>128</ccws:cacheRequest>
+      </ccws:GetCacheEx>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2013Sep18 19:14:41,639][DEBUG][584129117195_1379546070324][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2013Sep18 19:14:41,640][DEBUG][584129117195_1379546070324][buildSOAPBody RTBSGetCacheExDelegator.java:167][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-17659794" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>y5CVzChQvZX/mtdnWU9a1g==</wsse:Nonce>
+            <wsu:Created>2013-09-18T19:14:41.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:GetCacheEx>
+         <ccws:cacheRequest>128</ccws:cacheRequest>
+      </ccws:GetCacheEx>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2013Sep18 19:14:41,643][DEBUG][584129117195_1379546070324][execute RTBSGetCacheExDelegator.java:125][str: org.apache.commons.httpclient.methods.StringRequestEntity@aa115]
+[2013Sep18 19:14:42,479][DEBUG][584129117195_1379546070324][processRequest FCController.java:549][FriendFamily: 0]
+[2013Sep18 19:14:42,492][DEBUG][584129117195_1379546070324][processRequest FCController.java:571][cosCod: 51cosName: Radicall Plus ZF]
+[2013Sep18 19:14:42,494][DEBUG][584129117195_1379546070324][processRequest FCController.java:580][Se asigna el valor COS_CODE: 51]
+[2013Sep18 19:14:42,495][DEBUG][584129117195_1379546070324][processRequest FCController.java:602][PASO 6 y 7: Transformacion de F&F a traves del configurador]
+[2013Sep18 19:14:42,497][DEBUG][584129117195_1379546070324][processRequest FCController.java:635][PASO 8 y 9: Llamadas al servicio SLS SIMCARD]
+[2013Sep18 19:14:42,504][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_SLS_IN>
+	<Login></Login>
+	<Channel>${Channel}</Channel>
+	<System>${System}</System>
+<SIMCard>
+	<IMSI>${IMSI}</IMSI>
+</SIMCard>
+</RTBS_SLS_IN>
+]
+[2013Sep18 19:14:42,506][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_SLS_IN>
+	<Login></Login>
+	<Channel>]
+[2013Sep18 19:14:42,507][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: Channel]
+[2013Sep18 19:14:42,509][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </Channel>
+	<System>]
+[2013Sep18 19:14:42,515][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: System]
+[2013Sep18 19:14:42,517][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </System>
+<SIMCard>
+	<IMSI>]
+[2013Sep18 19:14:42,518][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: IMSI]
+[2013Sep18 19:14:42,520][DEBUG][584129117195_1379546070324][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </IMSI>
+</SIMCard>
+</RTBS_SLS_IN>
+]
+[2013Sep18 19:14:42,523][DEBUG][584129117195_1379546070324][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2013Sep18 19:14:42,525][DEBUG][584129117195_1379546070324][buildXMLIn SLSSimCardDelegator.java:112][Comando Ensamblado <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_SLS_IN>
+	<Login></Login>
+	<Channel>FEATC</Channel>
+	<System>FEATC</System>
+<SIMCard>
+	<IMSI>734021019549237</IMSI>
+</SIMCard>
+</RTBS_SLS_IN>
+]
+[2013Sep18 19:14:42,578][DEBUG][584129117195_1379546070324][getSLSSimCardInformation FCHelper.java:271][xml <?xml version="1.0" encoding="UTF-8"?>
+<RTBS_SLS_OUT>
+	<OperationMessage>
+		<Code>RTBS_SLS-OM0001</Code>
+		<Message>Operacion ejecutada de forma exitosa</Message>
+	</OperationMessage>
+	<SIMCard>
+		<ICCID>8958020804280687460F</ICCID>
+		<PUK>40280511</PUK>
+		<PUK2>69883405</PUK2>
+	</SIMCard>
+</RTBS_SLS_OUT>
+
+]
+[2013Sep18 19:14:42,587][INFO ][584129117195_1379546070324][getSLSSimCardInformation FCHelper.java:291][Obtenido ICCID satisfactoriamente]
+[2013Sep18 19:14:42,589][DEBUG][584129117195_1379546070324][getSLSSimCardInformation FCHelper.java:296][Map a retornar del servicio SLS {ICCID=8958020804280687460F}]
+[2013Sep18 19:14:42,590][DEBUG][584129117195_1379546070324][processRequest FCController.java:665][PASO 10 y 11: Llamadas al servicio de equivalencias]
+[2013Sep18 19:14:42,644][DEBUG][584129117195_1379546070324][getGenericDataValue DataValueLookupDelegator.java:207][Obteniendo equivalencia genérica para tripleta: 
+ System: RTBS,Value: Radicall Plus ZF, Type: PLAN COD.
+ ]
+[2013Sep18 19:14:42,711][DEBUG][584129117195_1379546070324][getGenericDataValue DataValueLookupDelegator.java:207][Obteniendo equivalencia genérica para tripleta: 
+ System: RTBS,Value: Radicall Plus ZF, Type: PLAN DES.
+ ]
+[2013Sep18 19:14:42,721][DEBUG][584129117195_1379546070324][getGenericDataValue DataValueLookupDelegator.java:207][Obteniendo equivalencia genérica para tripleta: 
+ System: RTBS,Value: Active, Type: ESTADO LINEA PREPAGO.
+ ]
+[2013Sep18 19:14:42,762][DEBUG][584129117195_1379546070324][processRequest FCController.java:716][PASO 12: Construccion de xml de salidas]
+[2013Sep18 19:14:42,768][DEBUG][584129117195_1379546070324][processRequest FCController.java:737][Se asignan los valores de fechas de activacion/ultimo cobro, estado, periodo y dia de aplicacion.]
+[2013Sep18 19:14:42,769][DEBUG][584129117195_1379546070324][processRequest FCController.java:765][PASO (14-15).1: Llamadas al servicio de equivalencias para PRODUCT_STATUS  de Servicios y Periodos]
+[2013Sep18 19:14:42,771][DEBUG][584129117195_1379546070324][processRequest FCController.java:767][Se realizan las transformaciones de las nuevas equivalencias.]
+[2013Sep18 19:14:42,772][DEBUG][584129117195_1379546070324][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2013Sep18 19:14:42,774][DEBUG][584129117195_1379546070324][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2013Sep18 19:14:42,775][DEBUG][584129117195_1379546070324][processRequest FCController.java:795][Response: <?xml version="1.0" encoding="UTF-8"?>
+<EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="OPERATION_TYPE" value="-1" />
+		<PARAM name="ICCID" value="8958020804280687460" />
+		<PARAM name="MSISDN" value="584129117195" />
+		<PARAM name="IMSI" value="734021019549237" />
+		<PARAM name="PIN" value="0000" />
+		<PARAM name="PUK" value="00000" />
+		<PARAM name="PIN2" value="0000" />
+		<PARAM name="PUK2" value="00000" />
+		<PARAM name="CATEGORY" value="0" />
+		<PARAM name="STATE" value="Activa (Llamadas Entrantes y Salientes)" />
+		<PARAM name="MONEY_SITUATION" value="5917.702156" />
+		<PARAM name="CHANGE_SIM_CHARGE" value="0" />
+		<PARAM name="SERVICEPROVIDERID" value="DIGITEL" />
+		<PARAM name="INSTALL_DATE" value="20130729115903" />
+		<PARAM name="ACTIVE_DATE" value="20130805181759" />
+		<PARAM name="DEACTIVATED" value="" />
+		<PARAM name="DEACTIVE_DATE" value="20410731235905" />
+		<PARAM name="EXPIRED_REASON" value="" />
+		<PARAM name="EXPIRY_DATE" value="20320628235959" />
+		<PARAM name="INFORMEDMESSAGEID" value="1" />
+		<PARAM name="LANGUAGE_ID" value="Spanish" />
+		<PARAM name="TARIFFID" value="Radicall Plus ZF" />
+		<PARAM name="NUM_CH_TAR" value="0" />
+		<PARAM name="CH_TAR_DATE" value="" />
+		<PARAM name="SERVICES" value="" />
+		<PARAM name="NUMRELOADS" value="0" />
+		<PARAM name="TYPEOFCARD" value="" />
+		<PARAM name="NEW_SIM_ICCID" value="" />
+		<PARAM name="NEW_IMSI_NRC_L" value="" />
+		<PARAM name="CARDPHASE" value="" />
+		<PARAM name="LAST_CALLDATE" value="20130918182345" />
+		<PARAM name="DISTRICT" value="" />
+		<PARAM name="NUM_DISTRICTS" value="0" />
+		<PARAM name="LAST_CH_DISTRICT" value="" />
+		<PARAM name="AST_STATE" value="0" />
+		<PARAM name="NUM_BILLED_SMS" value="0" />
+		<PARAM name="NUM_FREE_SMS" value="5088.0" />
+		<PARAM name="ACCESORY_EDATE" value="" />
+		<PARAM name="DEBITCO" value="0.000000" />
+		<PARAM name="BONUS1" value="1480.0" />
+		<PARAM name="BONUS2" value="0.0" />
+		<PARAM name="NUM_FREE_SECONDS" value="245475.0" />
+		<PARAM name="CARD_FEATURES" value="00000000" />
+		<PARAM name="SERVCARD_EDATE2" value="" />
+		<PARAM name="SERVCARD_EDATE5" value="" />
+		<PARAM name="SERVCARD_EDATE1" value="" />
+		<PARAM name="SERVCARD_EDATE3" value="" />
+		<PARAM name="SERVCARD_EDATE4" value="" />
+		<PARAM name="RET_BONUS" value="3190.0" />
+		<PARAM name="TYPE_OF_BONUS" value="" />
+		<PARAM name="TYPE_OF_LIST" value="" />
+		<PARAM name="RET_BONUS_EDATE" value="20131017235905" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+		<RECORD name="PRODUCT" value="0">
+			<PARAM name="PRODUCT_NAME" value="MOV-MAS-PRE-PLAN-00017" />
+			<PARAM name="PRODUCT_DESC" value="Radicall Plus ZF" />
+			<PARAM name="PRODUCT_STATUS" value="Activo" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="20130918191222" />
+			<PARAM name="LAST_ACT_DATE" value="" />
+			<PARAM name="EXP_DATE" value="20320628235959" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="0" />
+			<PARAM name="RENEWAL_PERIOD" value="" />
+			<PARAM name="RENEWAL_DAY" value="" />
+		</RECORD>
+
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>]
+[2013Sep18 19:14:42,777][INFO ][584129117195_1379546070324][processRequest FCController.java:799][Requerimiento procesado con exito]
+[2013Sep18 19:14:42,778][INFO ][584129117195_1379546070324][doPost ConsultaLineaServlet.java:60][Requerimiento Procesado]

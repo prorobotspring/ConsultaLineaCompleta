@@ -1,0 +1,77 @@
+# Archivo de configuracion para la aplicacion de Consulta Linea Prepago
+
+# Servidor Weblogic
+application.consulta.linea.initial_context_factory=weblogic.jndi.WLInitialContextFactory
+
+# IP y Puerto servidor weblogic
+application.consulta.linea.provider_url=t3://10.27.31.224:7005
+
+#
+application.consulta.linea.rtbs.endpoint=http://10.60.13.23/ccws/ccws.asmx
+#application.consulta.linea.rtbs.endpoint=http://10.60.9.26/ccws/ccws.asmx
+#application.consulta.linea.rtbs.endpoint=http://10.21.17.190:7001/ccws/ccws.asmx
+#application.consulta.linea.rtbs.endpoint=http://10.60.68.23:7011/transformerConsultaLinea-xml/ccws/ccws.asmx
+
+#
+application.consulta.linea.rtbs.timeOut=60000
+
+#
+application.consulta.linea.rtbs.ccwsWsdd=/export/home/weblogic/digitel/applications/ConsultaLineaCompleta/client.wsdd
+
+#
+application.consulta.linea.spcr.datasource=jdbc.datasource.ffnamebytaxzone
+
+# 
+application.consulta.linea.soapaction.retrieve="http://comverse-in.com/prepaid/ccws/RetrieveSubscriberWithIdentityNoHistory"
+
+# 
+application.consulta.linea.soapaction.getcacheex="http://comverse-in.com/prepaid/ccws/GetCacheEx"
+
+#
+application.consulta.linea.simcard.endpoint=http://10.27.31.224:7005/RTBS_SLS_WEB/RTBSSLSServlet
+
+#
+application.equivalence.data.initial_context_factory=weblogic.jndi.WLInitialContextFactory
+
+#
+application.equivalence.data.provider_url=t3://10.27.31.224:7005
+
+# 
+application.consulta.linea.rtbs.user=mwprepaid
+
+# 
+application.consulta.linea.rtbs.password=digitel412
+#application.consulta.linea.rtbs.password=1W3008prep
+
+#############propiedades de conexion del cache de ccws #########
+application.consulta.linea.rtbsCache.endpoint=http://10.27.31.224:7005/ccwsCacheWebServices/GetCache
+
+#
+application.consulta.linea.rtbsCache.timeOut=10000
+
+#
+application.consulta.linea.rtbsCache.ccwsWsdd=/export/home/weblogic/digitel/applications/ConsultaLineaCompleta/client.wsdd
+
+# 
+application.consulta.linea.rtbsCache.user=mwprepaid
+
+# 
+#application.consulta.linea.rtbsCache.password=1W3008prep
+application.consulta.linea.rtbsCache.password=digitel412
+
+# 
+application.consulta.linea.rtbs.Recent_Mtr_Num_Days=7
+
+# 
+application.consulta.linea.rtbs.online_cos_charge=false
+
+# Maximo de conexiones por Host, asociado a la cantidad de hilos del servidor
+application.consulta.linea.httpclient.maxconnetionPerHost=25
+
+# Total maximo de conexiones, asociado a la cantidad de hilos del servidor
+application.consulta.linea.httpclient.maxTotalConnections=25
+
+
+#Data source para base de datos historicos de MTRs
+#application.consulta.linea.mtr_hist_db.datasource=jdbc.datasource.consultscratchcard
+application.consulta.linea.mtr_hist_db.datasource=nueva.ribd.historico

@@ -1,0 +1,16 @@
+		<RECORD name="PRODUCT" value="${PRODUCT}">
+			<PARAM name="PRODUCT_NAME" value="${PRODUCT_NAME}" />
+			<PARAM name="PRODUCT_DESC" value="${PRODUCT_DESC}" />
+			<PARAM name="PRODUCT_STATUS" value="${PRODUCT_STATUS}" />
+			<PARAM name="SUBSTATUS" value="0" />
+			<PARAM name="ACT_DATE" value="${ACT_DATE}" />
+			<PARAM name="LAST_ACT_DATE" value="${LAST_ACT_DATE}" />
+			<PARAM name="EXP_DATE" value="${EXP_DATE}" />
+			<PARAM name="MINIDEACTIVATION_DATE" value="" />
+			<PARAM name="OLDTRAFFIC_ID" value="" />
+			<PARAM name="SERVICE_BIT" value="" />
+			<PARAM name="FRIENDS_FLAG" value="" />
+			<PARAM name="RENEWAL_ATTEMPTS" value="" />
+			<PARAM name="RENEWAL_PERIOD" value="${RENEWAL_PERIOD}" />
+			<PARAM name="RENEWAL_DAY" value="${RENEWAL_DAY}" />
+		</RECORD>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EAIMessage IntObjectName="" MessageId="">
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="MSISDN" value="${SubscriberID}" />
+		<PARAM name="IMSI" value="${IMSI}" />
+		<PARAM name="STATE" value="${currentState}" />
+		<PARAM name="MONEY_SITUATION" value="${MONEY_SITUATION}" />
+		<PARAM name="ERROR_CODE" value="0" />
+		<PARAM name="ERROR_DESCRIPTION" value="OK" />
+	</IBX_ADP_OUT_PARAMETERS>
+</EAIMessage>
